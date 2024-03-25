@@ -19,6 +19,6 @@ def save_users(users):
 def initialize_cooldowns(user_id):
     return {
         user_id: "12456789",
-        'mission_cooldown': 24 * 1,  # 24 hours in seconds
+        'mission_cooldown': 24 * 3600,  # 24 hours in seconds
         'reminder_cooldown': 12 * 3600  # 12 hours in seconds
     }

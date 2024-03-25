@@ -37,7 +37,7 @@ async def on_message(message):
 async def tick_cooldowns():
     bot.users_data = backend.load_users()  # Reload users data
     for user_id, data in bot.users_data.items():
-        data['mission_cooldown'] -= 1  # 1 hour in seconds
+        data['mission_cooldown'] -= 3600  # 1 hour in seconds
         data['reminder_cooldown'] -= 3600  # 1 hour in seconds
     backend.save_users(bot.users_data)
 
